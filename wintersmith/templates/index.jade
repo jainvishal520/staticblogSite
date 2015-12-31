@@ -1,6 +1,9 @@
 
 extends layout
 
+block beforeContent
+  div(style="background-image: url(#{locals.featured_image})",class='featured-image')
+  
 block content
   include author
   each article in articles
