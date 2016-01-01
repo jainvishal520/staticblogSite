@@ -2,14 +2,14 @@
 title: A red herring
 author: baker
 date: 2013-04-01
-template: article.jade
+fvu: https://www.youtube.com/embed/K1X3jf9Fx58" 
+template: featured_article.jade
 ---
 
 A long time ago, when the world was young -- someone put some food on their tongue.
 They tasted the food, and thought it was nice. Most fruit liked it -- but banana's thought twice.
 
-<span class="more"></span>
-
+[![Everything Is AWESOME](http://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=StTqXEQ2l-Y "Everything Is AWESOME")
 They held a meeting at quarter past eight.
 Whilst the human's were getting home late.
 They decided they didn't want to be eaten they said:
@@ -31,3 +31,4 @@ We must take up arms, and fight to the end.
 Because, believe it or not, a banana is not a friend.
 
 ![a banana](banana.png)
+

@@ -15,6 +15,13 @@ body {
   width: 34em;
   margin: 0 auto;
 }
+.clear{
+  clear: both;
+}
+.clear:after{
+  clear: both;
+  content: "";
+}
 
 body, a {
   color: #171717;
