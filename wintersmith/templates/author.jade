@@ -4,5 +4,6 @@ mixin author(authorName)
   span.author
     if author
       a(href='mailto:' + author.metadata.email)= author.metadata.name
+      a(href=author.url)= author.metadata.name
     else
       = authorName

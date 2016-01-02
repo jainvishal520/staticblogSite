@@ -28,3 +28,16 @@ The default [wintersmith](https://github.com/jnordberg/wintersmith) template
 #### adding featured videos 
 * add a variable _featured\_video\_url_ to the article.
 * in `article.jade` file, add a provision to embed the video with corresponding css.
+
+
+#### adding custom author pages
+* `mkdir xontent/author/<author_name>`
+* in _index.md_ add :
+ ---
+  	title : asdasdadsd
+  	template : author_detail.jade
+  	authorName : baker
+---
+* in `templates/author_detail.jade`, create the template for the author 
+* author detail page can be accessed by ` author.url`
+

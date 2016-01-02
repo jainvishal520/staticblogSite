@@ -8,7 +8,8 @@
     "featured_image":"https://static.wixstatic.com/media/20adf4_79e069a6137d422a8ba595ee8b68c85c.jpg/v1/crop/w_980,h_360,al_t,q_85/60adf4_79e069a6137d422a8ba595ee8b68c85c.jpg"
   },
   "plugins": [
-    "./plugins/paginator.coffee"
+    "./plugins/paginator.coffee",
+    "./plugins/helper.coffee"
   ],
   "require": {
     "moment": "moment",
@@ -24,5 +25,12 @@
   },
   "paginator": {
     "perPage": 3
-  }
+  },
+  "tags": [
+       {
+           "name": "Sports",
+           "url": "/tag_sports/"
+       }
+   ]
+
 }

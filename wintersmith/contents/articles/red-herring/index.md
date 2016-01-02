@@ -9,6 +9,7 @@ draft: true
 
 A long time ago, when the world was young -- someone put some food on their tongue.
 They tasted the food, and thought it was nice. Most fruit liked it -- but banana's thought twice.
+<span class="more"></span>
 
 [![Everything Is AWESOME](http://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=StTqXEQ2l-Y "Everything Is AWESOME")
 They held a meeting at quarter past eight.
