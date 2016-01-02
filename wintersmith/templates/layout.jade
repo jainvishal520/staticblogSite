@@ -14,6 +14,7 @@ html(lang='en')
       //link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|Merriweather:400,700,300')
       link(rel='stylesheet', href=contents.css['main.css'].url)
       link(rel='stylesheet', href=contents.css['custom.css'].url)
+      block top_scripts
   body(class=bodyclass)
 
     header.header
@@ -35,3 +36,4 @@ html(lang='en')
             p &copy; #{ new Date().getFullYear() } #{ locals.owner } &mdash; powered by&nbsp;
               a(href='https://github.com/jnordberg/wintersmith') Wintersmith
               //- please leave the "powered by" if you use the design
+    block bottom_scripts
