@@ -1,0 +1,32 @@
+extends layout
+block content
+  h2 author
+  div ** #{page.metadata.title} **
+  div ** #{page.metadata.authorName} **
+  - var author = contents.authors[page.metadata.authorName + '.json'];
+  span.author
+    if author
+      a(href='mailto:' + author.metadata.email)= author.metadata.name
+    else
+      = page.metadata.authorName
+
+  section.content!= typogr(page.html).typogrify()
+
+  - var articles = env.helpers.getArticles(contents, page.metadata.authorName);
+  section
+    each article in articles
+      if article.author == authorName
+        article.article.intro
+          header
+            p.date
+              span= moment.utc(article.date).format('DD. MMMM YYYY')
+            if article.metadata.draft == true
+              span.draft draft
+            h2
+              a(href=article.url)= article.title
+          section.content
+            if article.intro.length > 0
+              != typogr(article.intro).typogrify()
+            if article.hasMore
+              p.more
+                a(href=article.url) more
