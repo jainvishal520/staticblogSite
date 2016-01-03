@@ -1,0 +1,17 @@
++++
+categories = ["misc"]
+date = "2016-01-01T17:52:41-05:00"
+title = "title of post 1"
+
++++
+## just a random post with pic
+
+![cover](http://www.planwallpaper.com/static/images/i-should-buy-a-boat.jpg)
+
+
+Here is a little Python function to welcome you:
+
+{{< highlight python >}}
+def hello_world():
+    print "Hello there!"
+{{< /highlight >}}
