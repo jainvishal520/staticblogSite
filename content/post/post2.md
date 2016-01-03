@@ -14,5 +14,14 @@ menu = "main"           # set "main" to add this content to the main menu
 +++
 ## Just a random post2 with video
 
-{{<youtube Tj75Arhq5ho>}}
+
+Nothing else matters- METALLICA
+{{<youtube tAGnKpE4NCI>}}
+
+
+{{<tweet 645395638331437056>}}
+
+
+
+
 
