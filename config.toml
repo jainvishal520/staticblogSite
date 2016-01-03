@@ -1,0 +1,4 @@
+baseurl = "http://yourSiteHere/"
+languageCode = "en-us"
+title = "my Blog"
+theme="aglaus"
