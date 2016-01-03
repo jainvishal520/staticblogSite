@@ -7,7 +7,7 @@ draft = false
 slug = "post2"
 tags = ["post","videoposts"]
 image = "/static/3.jpeg"
-comments = false    # set false to hide Disqus comments
+comments = true    # set false to hide Disqus comments
 share = true        # set false to share buttons
 menu = "main"           # set "main" to add this content to the main menu
 

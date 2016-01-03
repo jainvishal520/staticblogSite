@@ -14,7 +14,5 @@ menu = "main"           # set "main" to add this content to the main menu
 +++
 ## Just a random post2 with video
 
-![cover](http://www.planwallpaper.com/static/images/i-should-buy-a-boat.jpg)
-
-
+{{<youtube Tj75Arhq5ho>}}
 
