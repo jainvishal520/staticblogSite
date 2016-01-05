@@ -79,6 +79,7 @@ to put video{{<youtube hfi9eu9e>}} extract part after "v=" from url
 github {{<gest spf13 7897877898>}} u will get it looking at url
 you can even edit theme.
 goto theme your theme find css and js file and edit accordingly
+but u need to copy the whole static folder inside you theme and paste it in the directory which contains content and theme directories
 
 delete public directory it might interfere with your changes
 
