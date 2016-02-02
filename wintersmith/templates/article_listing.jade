@@ -1,0 +1,35 @@
+extends layout
+block content
+
+
+  - var articles = env.helpers.getList(contents);
+  section
+    each article in articles
+        article.article.intro
+        .container(style='background-color: #f3f3f3;')
+             
+          
+            .headline-card.tracked.loaded(style='height: 510px;')
+              a.image-wrap(href='#')
+                img.image.image-small(src='https://assets.entrepreneur.com/content/16x9/822/1390609103-seed-doesnt-make-series-startups-never-reach-second-funding-round.jpg')
+             
+              .body
+                h3
+                  a(href=article.url)= article.title
+
+                .news-info
+                 
+                  span.time
+                    i.fa.fa-calendar.fa-1x
+                    span= moment.utc(article.date).format('DD. MMMM YYYY')
+
+                  span.time
+                    
+                    a(href=article.url)= article.author
+              .text-preview
+                p
+                  a(href='#')
+                    if article.intro.length > 0
+                != typogr(article.intro).typogrify()
+             
+              
