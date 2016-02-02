@@ -11,94 +11,31 @@ html(lang='en')
         block title
           = locals.name
       link(rel='alternate', href=locals.url+'/feed.xml', type='application/rss+xml', title=locals.description)
-      link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|Merriweather:400,700,300')
-      link(rel='stylesheet', href=contents.css['main.css'].url)
-      link(rel='icon', href='favicon.ico')
-    
-      // Bootstrap core CSS
-      link(href=contents.css['bootstrap.min.css'].url, rel='stylesheet')
-      link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
-      // Custom styles for this template
-      link(href=contents.css['jquery.bxslider.css'].url, rel='stylesheet')
-    
-  body(class=bodyclass)
-    nav.navbar.navbar-inverse.navbar-fixed-top
-      .container
-        .navbar-header
-          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
-            span.sr-only Toggle navigation
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-        #navbar.collapse.navbar-collapse
-          ul.nav.navbar-nav
-            li.active
-              a(href='index.html') Home
-            
-            li
-              a(href='about.html') About Me
-            li
-              a(href='about.html') Contact
-          ul.nav.navbar-nav.navbar-right
-            li
-              a(href='#')
-                i.fa.fa-facebook
-            li
-              a(href='#')
-                i.fa.fa-twitter
-            li
-              a(href='#')
-                i.fa.fa-instagram
-            li
-              a(href='#')
-                i.fa.fa-google-plus
-            li
-              a(href='#')
-                i.fa.fa-dribbble
-            li
-              a(href='#')
-                i.fa.fa-reddit
-        // /.nav-collapse
-    .container
-      header
-       div.content-wrap
-        block header
-         
-      
-     
+      link(href='https://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css', rel='stylesheet')
 
-      div#content
+      //link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|Merriweather:400,700,300')
+      link(rel='stylesheet', href=contents.css['main.css'].url)
+      link(rel='stylesheet', href=contents.css['custom.css'].url)
+      block top_scripts
+  body(class=bodyclass)
+
+    header.header
+      block header
+        div.logo
+          img(src=locals.logo)
+    block beforeContent
+
+    div#content
       div.content-wrap
         block content
-
-
-    footer.footer
+          
+    footer
       div.content-wrap
-       block footer 
-        .footer-socials
-          a(href='#')
-            i.fa.fa-facebook
-          a(href='#')
-            i.fa.fa-twitter
-          a(href='#')
-            i.fa.fa-instagram
-          a(href='#')
-            i.fa.fa-google-plus
-          a(href='#')
-            i.fa.fa-dribbble
-          a(href='#')
-            i.fa.fa-reddit
-        .footer-bottom
-          i.fa.fa-copyright
-          |  Copyright 2015. All rights reserved.
-          br
-
-
-    //
-      Bootstrap core JavaScript
-      ==================================================
-    // Placed at the end of the document so the pages load faster
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
-    script(src=contents.js['bootstrap.min.js'].url)
-    script(src=contents.js['jquery.bxslider.js'].url)
-    script(src=contents.js['mooz.scripts.min.js'].url)
+        block footer
+          section.about
+            !=contents['about.md'].html
+          section.copy
+            p &copy; #{ new Date().getFullYear() } #{ locals.owner } &mdash; powered by&nbsp;
+              a(href='https://github.com/jnordberg/wintersmith') Wintersmith
+              //- please leave the "powered by" if you use the design
+    block bottom_scripts
