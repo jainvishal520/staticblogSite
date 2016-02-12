@@ -1,4 +1,5 @@
 extends layout
+block header
 block content
 
 
@@ -6,8 +7,9 @@ block content
   section
     each article in articles
         article.article.intro
+
         .container(style='background-color: #f3f3f3;')
-             
+           
           
             .headline-card.tracked.loaded(style='height: 510px;')
               a.image-wrap(href='#')
@@ -31,5 +33,6 @@ block content
                   a(href='#')
                     if article.intro.length > 0
                 != typogr(article.intro).typogrify()
+block footer                
              
               
