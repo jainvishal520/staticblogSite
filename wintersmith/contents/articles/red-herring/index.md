@@ -4,6 +4,7 @@ author: baker
 date: 2013-04-01
 fvu: https://www.youtube.com/embed/K1X3jf9Fx58" 
 template: featured_article.jade
+banner: assets/images/banana.png
 draft: true
 ---
 

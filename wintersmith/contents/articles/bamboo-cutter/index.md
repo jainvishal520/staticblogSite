@@ -3,6 +3,7 @@ title: "Taketori Monogatari"
 author: Princess Kaguya
 date: 2012-02-01
 template: article.jade
+banner: assets/images/taketori_monogatari.jpg
 ---
 
 Long, long ago, there lived an old bamboo wood-cutter.
