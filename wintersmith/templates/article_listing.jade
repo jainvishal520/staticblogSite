@@ -8,31 +8,32 @@ block content
     each article in articles
         article.article.intro
 
-        .container(style='background-color: #f3f3f3;')
+        .container(style='background-color: #fff;')
            
           
-            .headline-card.tracked.loaded(style='height: 510px;')
+            .headline-card.tracked.loaded(style='height: 210px;')
               a.image-wrap(href='#')
-                img.image.image-small(src='https://assets.entrepreneur.com/content/16x9/822/1390609103-seed-doesnt-make-series-startups-never-reach-second-funding-round.jpg')
+                if article.metadata.banner
+                  img.image.image-small(src=article.metadata.banner)
              
-              .body
-                h3
-                  a(href=article.url)= article.title
+            .body
+              h3
+                a(href=article.url)= article.title
 
-                .news-info
+            .news-info
                  
-                  span.time
-                    i.fa.fa-calendar.fa-1x
-                    span= moment.utc(article.date).format('DD. MMMM YYYY')
+                span.time
+                  i.fa.fa-calendar.fa-1x
+                  span= moment.utc(article.date).format('DD. MMMM YYYY')
 
-                  span.time
+                span.time
                     
-                    a(href=article.url)= article.author
-              .text-preview
-                p
-                  a(href='#')
-                    if article.intro.length > 0
-                != typogr(article.intro).typogrify()
+                  a(href=article.url)= article.author
+            .text-preview
+              p
+                a(href='#')
+                  if article.intro.length > 0
+              != typogr(article.intro).typogrify()
 block footer                
              
               
